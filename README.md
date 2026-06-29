@@ -53,4 +53,4 @@ RISC-V instructions may provide the following fields:
 
 ## Image of the core
 
-![alt text](<RISC-V-CPU-Core-main/Images/RISCV - project.png>)
+![alt text](<RISC-V-CPU-Core-main/Images/RISCV%20-%20project.png>)
