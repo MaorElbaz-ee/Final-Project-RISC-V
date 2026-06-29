@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Oct 16 10:38:27 2025
+# Process ID         : 11712
+# Current directory  : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent7572 C:\Users\salti\Desktop\Final_Project\RV32M - FPGA\pipline\riscv_5stagepipline.xpr
+# Log file           : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline/vivado.log
+# Journal file       : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline\vivado.jou
+# Running On         : Zenbook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 33685 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35833 MB
+# Available Virtual  : 22146 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline/riscv_5stagepipline.xpr}
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline/riscv_5stagepipline.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1402.297 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 806 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline/Nexys-A7-100T-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1501.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1931.477 ; gain = 710.043
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline/riscv_5stagepipline.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline/riscv_5stagepipline.runs/synth_1/top.dcp
+launch_runs synth_1 -jobs 8
+[Thu Oct 16 10:41:15 2025] Launched synth_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline/riscv_5stagepipline.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Oct 16 10:45:10 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline/riscv_5stagepipline.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Oct 16 10:46:24 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/pipline/riscv_5stagepipline.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 23 08:59:30 2025...

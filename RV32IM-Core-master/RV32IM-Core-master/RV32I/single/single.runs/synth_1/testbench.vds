@@ -1,0 +1,365 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Oct 15 13:42:42 2025
+# Process ID         : 34168
+# Current directory  : C:/Users/salti/Desktop/Final_Project/RV32I/single/single.runs/synth_1
+# Command line       : vivado.exe -log testbench.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench.tcl
+# Log file           : C:/Users/salti/Desktop/Final_Project/RV32I/single/single.runs/synth_1/testbench.vds
+# Journal file       : C:/Users/salti/Desktop/Final_Project/RV32I/single/single.runs/synth_1\vivado.jou
+# Running On         : Zenbook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 33685 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35833 MB
+# Available Virtual  : 10933 MB
+#-----------------------------------------------------------
+source testbench.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/salti/Desktop/Final_Project/RV32I/single/single.srcs/utils_1/imports/synth_1/testbench.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/salti/Desktop/Final_Project/RV32I/single/single.srcs/utils_1/imports/synth_1/testbench.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top testbench -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27492
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 850.695 ; gain = 473.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'PCSrc', assumed default net type 'wire' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:80]
+INFO: [Synth 8-6157] synthesizing module 'testbench' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'riscvsingle' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:67]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:90]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:122]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:122]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:151]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:169]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:151]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:90]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:189]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:272]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:272]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:246]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:246]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:282]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:282]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:226]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:226]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:252]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:252]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:331]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:331]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:298]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:298]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:189]
+INFO: [Synth 8-6155] done synthesizing module 'riscvsingle' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:67]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:308]
+INFO: [Synth 8-3876] $readmem data file 'riscvtest_sll.txt' is read successfully [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:314]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:308]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:319]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:319]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:54]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:22]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:31]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:31]
+WARNING: [Synth 8-11581] system task call 'stop' not supported [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:35]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:37]
+WARNING: [Synth 8-11581] system task call 'stop' not supported [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:39]
+INFO: [Synth 8-6155] done synthesizing module 'testbench' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:2]
+WARNING: [Synth 8-6014] Unused sequential element hash_reg was removed.  [C:/Users/salti/Desktop/Final_Project/RV32I/single/riscvsingle.sv:47]
+WARNING: [Synth 8-7129] Port a[31] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[6] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[5] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[4] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[3] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[2] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[1] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[0] in module datapath is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 957.289 ; gain = 580.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 957.289 ; gain = 580.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 957.289 ; gain = 580.270
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 957.289 ; gain = 580.270
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	   4 Input   32 Bit        Muxes := 1     
+	  23 Input   32 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port a[31] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[7] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module imem is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1256.641 ; gain = 879.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+---------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------------------+-----------+----------------------+----------------+
+|testbench   | dut/rvsingle/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|testbench   | dut/dmem/RAM_reg          | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+---------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1256.641 ; gain = 879.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+---------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------------------+-----------+----------------------+----------------+
+|testbench   | dut/rvsingle/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|testbench   | dut/dmem/RAM_reg          | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+---------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1256.641 ; gain = 879.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1343.699 ; gain = 966.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1343.699 ; gain = 966.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1343.699 ; gain = 966.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1343.699 ; gain = 966.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1343.699 ; gain = 966.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1343.699 ; gain = 966.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    48|
+|2     |LUT1     |     4|
+|3     |LUT2     |    35|
+|4     |LUT3     |    50|
+|5     |LUT4     |   103|
+|6     |LUT5     |   174|
+|7     |LUT6     |   474|
+|8     |RAM32M   |    10|
+|9     |RAM32X1D |     4|
+|10    |RAM64X1S |    32|
+|11    |FDRE     |    32|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+------------+------+
+|      |Instance            |Module      |Cells |
++------+--------------------+------------+------+
+|1     |top                 |            |   966|
+|2     |  dut               |top         |   959|
+|3     |    dmem            |dmem        |    41|
+|4     |    rvsingle        |riscvsingle |   875|
+|5     |      dp            |datapath    |   875|
+|6     |        alu         |alu         |    26|
+|7     |        pcaddbranch |adder       |    26|
+|8     |        pcreg       |flopr       |   155|
+|9     |        rd1addjalr  |adder_0     |    12|
+|10    |        rf          |regfile     |   656|
++------+--------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1343.699 ; gain = 966.680
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 70 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1343.699 ; gain = 966.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1343.699 ; gain = 966.680
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1357.711 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 94 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1466.461 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: 358d5c82
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1466.461 ; gain = 1094.660
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1466.461 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/salti/Desktop/Final_Project/RV32I/single/single.runs/synth_1/testbench.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file testbench_utilization_synth.rpt -pb testbench_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 15 13:43:00 2025...

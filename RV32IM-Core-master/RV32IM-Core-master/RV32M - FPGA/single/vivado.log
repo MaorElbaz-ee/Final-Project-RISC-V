@@ -1,0 +1,329 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Nov 11 06:14:00 2025
+# Process ID         : 13444
+# Current directory  : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent13136 C:\Users\salti\Desktop\Final_Project\RV32M - FPGA\single\Single_FPGA.xpr
+# Log file           : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/vivado.log
+# Journal file       : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single\vivado.jou
+# Running On         : Zenbook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 33685 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35833 MB
+# Available Virtual  : 19146 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.xpr}
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-20:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1244.664 ; gain = 7.363
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292BD6C06A
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292BD6C06A
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1510.086 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1390 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-180] No cells matched 'rvsingle/dp/pcreg/DataAdr_OBUF[1]_inst_i_6'. [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Nexys-A7-100T-Master.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Nexys-A7-100T-Master.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Nexys-A7-100T-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1632.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1972.871 ; gain = 662.070
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: top
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5848
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2928.152 ; gain = 471.660
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'PCSrc', assumed default net type 'wire' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:93]
+INFO: [Synth 8-11241] undeclared symbol 'Lui', assumed default net type 'wire' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:94]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'slow_clock_0p5s' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:571]
+INFO: [Synth 8-6155] done synthesizing module 'slow_clock_0p5s' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:571]
+INFO: [Synth 8-6157] synthesizing module 'riscvsingle' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:80]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:135]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:135]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:164]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:182]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:164]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:224]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:308]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:308]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:282]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:282]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:318]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:318]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:262]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:262]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:288]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:288]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:381]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:381]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:334]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:334]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:224]
+INFO: [Synth 8-6155] done synthesizing module 'riscvsingle' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:80]
+INFO: [Synth 8-6157] synthesizing module 'imem_FPGA' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:355]
+INFO: [Synth 8-3876] $readmem data file 'prog.mem' is read successfully [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:362]
+INFO: [Synth 8-6155] done synthesizing module 'imem_FPGA' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:355]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:369]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:369]
+INFO: [Synth 8-6157] synthesizing module 'seven_Seg_Driver' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:471]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:499]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:520]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:557]
+INFO: [Synth 8-6155] done synthesizing module 'seven_Seg_Driver' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:471]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:3]
+WARNING: [Synth 8-7129] Port a[31] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[31] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[6] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[5] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[4] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[3] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[2] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[1] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[0] in module datapath is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3036.168 ; gain = 579.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3036.168 ; gain = 579.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3036.168 ; gain = 579.676
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3036.168 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3090.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3110.195 ; gain = 653.703
+47 Infos, 55 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3110.195 ; gain = 653.703
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 3141.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1390 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3160.250 ; gain = 2.254
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3295.441 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3295.441 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.203 . Memory (MB): peak = 3295.441 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3295.441 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 3295.441 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.288 . Memory (MB): peak = 3295.441 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.288 . Memory (MB): peak = 3295.441 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3295.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292BD6C06A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292BD6C06A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292BD6C06A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-20:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3852.031 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292BD6C06A
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292BD6C06A
+current_design rtl_1
+current_design impl_1
+current_design rtl_1
+current_design impl_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 12 13:40:19 2025...

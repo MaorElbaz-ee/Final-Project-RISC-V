@@ -1,0 +1,611 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Sep 11 18:32:08 2025
+# Process ID         : 33172
+# Current directory  : C:/Users/salti/Desktop/Final_Project/pipline
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent36060 C:\Users\salti\Desktop\Final_Project\pipline\riscv_5stagepipline.xpr
+# Log file           : C:/Users/salti/Desktop/Final_Project/pipline/vivado.log
+# Journal file       : C:/Users/salti/Desktop/Final_Project/pipline\vivado.jou
+# Running On         : Zenbook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 33685 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35833 MB
+# Available Virtual  : 12779 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1160.809 ; gain = 90.426
+update_compile_order -fileset sources_1
+synth_design -top top -part xc7a100tcsg324-1 -lint 
+Command: synth_design -top top -part xc7a100tcsg324-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 37124
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1663.016 ; gain = 438.848
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'riscv_pipline' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (1#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:125]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (2#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (3#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (4#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6157] synthesizing module 'if_id_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'if_id_stage_register' (6#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:417]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (7#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6157] synthesizing module 'id_ex_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:436]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized0' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized0' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized1' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized1' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized2' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized2' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized3' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized3' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex_stage_register' (9#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:436]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:563]
+ERROR: [Synth 8-27] procedural assign not supported [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:599]
+ERROR: [Synth 8-6156] failed synthesizing module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:563]
+ERROR: [Synth 8-6156] failed synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+ERROR: [Synth 8-6156] failed synthesizing module 'riscv_pipline' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1769.602 ; gain = 545.434
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 1 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design completed successfully
+ERROR: [Common 17-39] 'synth_design' failed due to earlier errors.
+synth_design -top top -part xc7a100tcsg324-1 -lint 
+Command: synth_design -top top -part xc7a100tcsg324-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1769.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'riscv_pipline' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (1#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:125]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (2#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (3#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (4#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6157] synthesizing module 'if_id_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'if_id_stage_register' (6#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:417]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (7#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6157] synthesizing module 'id_ex_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:436]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized0' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized0' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized1' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized1' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized2' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized2' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized3' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized3' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex_stage_register' (9#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:436]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:563]
+ERROR: [Synth 8-27] procedural assign not supported [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:599]
+ERROR: [Synth 8-6156] failed synthesizing module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:563]
+ERROR: [Synth 8-6156] failed synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+ERROR: [Synth 8-6156] failed synthesizing module 'riscv_pipline' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1792.656 ; gain = 23.055
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 1 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1792.656 ; gain = 23.055
+ERROR: [Common 17-39] 'synth_design' failed due to earlier errors.
+synth_design -top top -part xc7a100tcsg324-1 -lint 
+Command: synth_design -top top -part xc7a100tcsg324-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1798.020 ; gain = 5.363
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'riscv_pipline' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (1#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:125]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (2#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (3#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (4#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6157] synthesizing module 'if_id_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:433]
+INFO: [Synth 8-6155] done synthesizing module 'if_id_stage_register' (6#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:433]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (7#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6157] synthesizing module 'id_ex_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:452]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized0' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized0' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized1' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized1' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized2' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized2' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized3' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized3' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex_stage_register' (9#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:452]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:579]
+ERROR: [Synth 8-27] procedural assign not supported [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:600]
+ERROR: [Synth 8-6156] failed synthesizing module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:579]
+ERROR: [Synth 8-6156] failed synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+ERROR: [Synth 8-6156] failed synthesizing module 'riscv_pipline' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1798.020 ; gain = 5.363
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 1 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1798.020 ; gain = 5.363
+ERROR: [Common 17-39] 'synth_design' failed due to earlier errors.
+synth_design -top top -part xc7a100tcsg324-1 -lint 
+Command: synth_design -top top -part xc7a100tcsg324-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1803.555 ; gain = 5.535
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'riscv_pipline' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (1#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:125]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (2#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (3#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (4#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6157] synthesizing module 'if_id_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:433]
+INFO: [Synth 8-6155] done synthesizing module 'if_id_stage_register' (6#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:433]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (7#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6157] synthesizing module 'id_ex_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:452]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized0' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized0' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized1' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized1' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized2' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized2' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized3' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized3' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex_stage_register' (9#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:452]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:579]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (10#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:579]
+WARNING: [Synth 8-689] width (5) of port connection 'ResultSrcE0' does not match port width (1) of module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-689] width (2) of port connection 'Rs1D' does not match port width (5) of module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-689] width (2) of port connection 'Rs2D' does not match port width (5) of module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'Rs1E' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'Rs2E' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'StallF' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'StallD' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'FlushE' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'ForwardAE' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'ForwardBE' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7023] instance 'hz' of module 'hazard_unit' has 15 connections declared, but only 8 given [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:344]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (11#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:344]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:332]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (12#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:332]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:401]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (13#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:401]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:512]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem_stage_register' (14#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:512]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:547]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb_stage_register' (15#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:547]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:356]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (16#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:356]
+WARNING: [Synth 8-3848] Net ForwardBE in module/entity datapath does not have driver. [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:195]
+WARNING: [Synth 8-3848] Net ForwardAE in module/entity datapath does not have driver. [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:195]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (17#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_pipline' (18#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:370]
+INFO: [Synth 8-3876] $readmem data file 'riscvtest_sll.txt' is read successfully [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:376]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (19#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:370]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:385]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (20#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:385]
+INFO: [Synth 8-6155] done synthesizing module 'top' (21#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1805.078 ; gain = 7.059
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Sep 12 12:26:53 2025
+| Host         : Zenbook running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-1  | WARNING  | 1            | 0        |
+| ASSIGN-5  | WARNING  | 2            | 0        |
+| ASSIGN-6  | WARNING  | 3            | 0        |
+| ASSIGN-10 | WARNING  | 2            | 0        |
+| ASSIGN-12 | WARNING  | 2            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-78] [ASSIGN-1]Input operands(of sizes 32 4 32) of add/sub cluster ending with expression '((a + condinvb) + alucontrol[0])' could yield maximum size of 34, but only width of 32 is being used.
+Hierarchy 'alu', File 'C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv', Line 409.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'ForwardAE' are not set. First unset bit index is 0. 
+RTL Name 'ForwardAE', Hierarchy 'datapath', File 'riscv_5stagepipline.sv', Line 195.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'ForwardBE' are not set. First unset bit index is 0. 
+RTL Name 'ForwardBE', Hierarchy 'datapath', File 'riscv_5stagepipline.sv', Line 195.
+WARNING: [Synth 37-123] [ASSIGN-6]Some bits in 'InstrD' are not read. First unread bit index is 7. 
+RTL Name 'InstrD', Hierarchy 'riscv_pipline', File 'riscv_5stagepipline.sv', Line 33.
+WARNING: [Synth 37-123] [ASSIGN-6]Some bits in 'JalrTargetE' are not read. First unread bit index is 0. 
+RTL Name 'JalrTargetE', Hierarchy 'datapath', File 'riscv_5stagepipline.sv', Line 200.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'lwStall' was assigned but not read. 
+RTL Name 'lwStall', Hierarchy 'hazard_unit', File 'C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv', Line 594.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'a' are not read. First unread bit index is 0. 
+RTL Name 'a', Hierarchy 'imem', File 'riscv_5stagepipline.sv', Line 370.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'a' are not read. First unread bit index is 0. 
+RTL Name 'a', Hierarchy 'dmem', File 'riscv_5stagepipline.sv', Line 386.
+WARNING: [Synth 37-135] [ASSIGN-12]Unconnected input ports found on instance 'hz', port name is 'Rs1E'. 
+Hierarchy 'datapath', File 'C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv', Line 197.
+WARNING: [Synth 37-135] [ASSIGN-12]Unconnected input ports found on instance 'hz', port name is 'Rs2E'. 
+Hierarchy 'datapath', File 'C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv', Line 197.
+INFO: [Synth 37-85] Total of 10 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1823.352 ; gain = 25.332
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1823.352 ; gain = 25.332
+synth_design -top top -part xc7a100tcsg324-1 -lint 
+Command: synth_design -top top -part xc7a100tcsg324-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1823.625 ; gain = 0.273
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'riscv_pipline' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (1#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:125]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (2#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (3#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (4#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6157] synthesizing module 'if_id_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:433]
+INFO: [Synth 8-6155] done synthesizing module 'if_id_stage_register' (6#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:433]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (7#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6157] synthesizing module 'id_ex_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:452]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized0' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized0' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized1' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized1' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized2' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized2' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized3' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized3' (8#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex_stage_register' (9#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:452]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:579]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (10#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:579]
+WARNING: [Synth 8-689] width (5) of port connection 'ResultSrcE0' does not match port width (1) of module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-689] width (2) of port connection 'Rs1D' does not match port width (5) of module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-689] width (2) of port connection 'Rs2D' does not match port width (5) of module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'Rs1E' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'Rs2E' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'StallF' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'StallD' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'FlushE' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'ForwardAE' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'ForwardBE' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7023] instance 'hz' of module 'hazard_unit' has 15 connections declared, but only 8 given [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:344]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (11#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:344]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:332]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (12#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:332]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:401]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (13#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:401]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:512]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem_stage_register' (14#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:512]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:547]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb_stage_register' (15#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:547]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:356]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (16#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:356]
+WARNING: [Synth 8-3848] Net ForwardBE in module/entity datapath does not have driver. [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:195]
+WARNING: [Synth 8-3848] Net ForwardAE in module/entity datapath does not have driver. [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:195]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (17#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_pipline' (18#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:370]
+INFO: [Synth 8-3876] $readmem data file 'riscvtest_sll.txt' is read successfully [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:376]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (19#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:370]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:385]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (20#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:385]
+INFO: [Synth 8-6155] done synthesizing module 'top' (21#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1823.625 ; gain = 0.273
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Sep 12 12:27:05 2025
+| Host         : Zenbook running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-1  | WARNING  | 1            | 0        |
+| ASSIGN-5  | WARNING  | 2            | 0        |
+| ASSIGN-6  | WARNING  | 3            | 0        |
+| ASSIGN-10 | WARNING  | 2            | 0        |
+| ASSIGN-12 | WARNING  | 2            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-78] [ASSIGN-1]Input operands(of sizes 32 32 4) of add/sub cluster ending with expression '((a + condinvb) + alucontrol[0])' could yield maximum size of 34, but only width of 32 is being used.
+Hierarchy 'alu', File 'C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv', Line 409.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'ForwardAE' are not set. First unset bit index is 0. 
+RTL Name 'ForwardAE', Hierarchy 'datapath', File 'riscv_5stagepipline.sv', Line 195.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'ForwardBE' are not set. First unset bit index is 0. 
+RTL Name 'ForwardBE', Hierarchy 'datapath', File 'riscv_5stagepipline.sv', Line 195.
+WARNING: [Synth 37-123] [ASSIGN-6]Some bits in 'InstrD' are not read. First unread bit index is 7. 
+RTL Name 'InstrD', Hierarchy 'riscv_pipline', File 'riscv_5stagepipline.sv', Line 33.
+WARNING: [Synth 37-123] [ASSIGN-6]Some bits in 'JalrTargetE' are not read. First unread bit index is 0. 
+RTL Name 'JalrTargetE', Hierarchy 'datapath', File 'riscv_5stagepipline.sv', Line 200.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'lwStall' was assigned but not read. 
+RTL Name 'lwStall', Hierarchy 'hazard_unit', File 'C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv', Line 594.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'a' are not read. First unread bit index is 0. 
+RTL Name 'a', Hierarchy 'imem', File 'riscv_5stagepipline.sv', Line 370.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'a' are not read. First unread bit index is 0. 
+RTL Name 'a', Hierarchy 'dmem', File 'riscv_5stagepipline.sv', Line 386.
+WARNING: [Synth 37-135] [ASSIGN-12]Unconnected input ports found on instance 'hz', port name is 'Rs1E'. 
+Hierarchy 'datapath', File 'C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv', Line 197.
+WARNING: [Synth 37-135] [ASSIGN-12]Unconnected input ports found on instance 'hz', port name is 'Rs2E'. 
+Hierarchy 'datapath', File 'C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv', Line 197.
+INFO: [Synth 37-85] Total of 10 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1832.172 ; gain = 8.820
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: top
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1925.336 ; gain = 55.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'riscv_pipline' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:83]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:125]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:113]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:268]
+INFO: [Synth 8-6157] synthesizing module 'if_id_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:433]
+INFO: [Synth 8-6155] done synthesizing module 'if_id_stage_register' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:433]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:244]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:278]
+INFO: [Synth 8-6157] synthesizing module 'id_ex_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:452]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized0' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized0' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized1' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized1' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized2' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized2' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized3' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized3' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:302]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex_stage_register' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:452]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:579]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:579]
+WARNING: [Synth 8-689] width (5) of port connection 'ResultSrcE0' does not match port width (1) of module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-689] width (2) of port connection 'Rs1D' does not match port width (5) of module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-689] width (2) of port connection 'Rs2D' does not match port width (5) of module 'hazard_unit' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'Rs1E' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'Rs2E' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'StallF' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'StallD' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'FlushE' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'ForwardAE' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7071] port 'ForwardBE' of module 'hazard_unit' is unconnected for instance 'hz' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+WARNING: [Synth 8-7023] instance 'hz' of module 'hazard_unit' has 15 connections declared, but only 8 given [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:197]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:344]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:344]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:332]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:332]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:401]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:401]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:512]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem_stage_register' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:512]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb_stage_register' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:547]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb_stage_register' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:547]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:356]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:356]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:149]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_pipline' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:370]
+INFO: [Synth 8-3876] $readmem data file 'riscvtest_sll.txt' is read successfully [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:376]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:370]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:385]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:385]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:5]
+WARNING: [Synth 8-3848] Net ForwardBE in module/entity datapath does not have driver. [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:195]
+WARNING: [Synth 8-3848] Net ForwardAE in module/entity datapath does not have driver. [C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv:195]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2009.258 ; gain = 139.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.125 ; gain = 162.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.125 ; gain = 162.668
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2040.164 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/salti/Desktop/Final_Project/pipline/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/salti/Desktop/Final_Project/pipline/Nexys-A7-100T-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2147.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2340.434 ; gain = 470.977
+56 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2340.434 ; gain = 508.262

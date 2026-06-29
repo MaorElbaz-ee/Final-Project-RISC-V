@@ -1,0 +1,34 @@
+# Current time Fri Sep 12 12:43:46 2025
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 004a2d9f. Traceback:
+# 0    0x004a2d9f: 'xsltIterateSupportedLocales + 0x9636f'
+# 1    0x00766faa: 'WlfContextItem::`vector deleting destructor' + 0x6bd0a'
+# 2    0x0076830c: 'WlfContextItem::`vector deleting destructor' + 0x6d06c'
+# 3    0x007665b5: 'WlfContextItem::`vector deleting destructor' + 0x6b315'
+# 4    0x007646be: 'WlfContextItem::`vector deleting destructor' + 0x6941e'
+# 5    0x0067cd1d: 'WinMain + 0x12398d'
+# 6    0x004f72f9: 'EnumDispProc + 0x1779'
+# 7    0x71471fae: 'TclInvokeStringCommand + 0xbe'
+# 8    0x714739f1: 'TclNREvalObjv + 0x3e1'
+# 9    0x71473a49: 'TclNRRunCallbacks + 0x49'
+# 10   0x7147563c: 'Tcl_EvalObjEx + 0x2c'
+# 11   0x727a0400: 'Itcl_EvalMemberCode + 0x300'
+# 12   0x15585e80: '<unknown (@0x15585e80)>'
+# 13   0xcccccccc: '<unknown (@0xcccccccc)>'
+# 14   0x0264f1c0: '<unknown (@0x264f1c0)>'
+# 15   0x0264e874: '<unknown (@0x264e874)>'
+# 16   0x714739f1: 'TclNREvalObjv + 0x3e1'
+# 17   0x71473a49: 'TclNRRunCallbacks + 0x49'
+# 18   0x71537090: 'TclServiceIdle + 0xba0'
+# 19   0x71536369: 'Tcl_DeleteTimerHandler + 0x219'
+# 20   0x7150acb5: 'Tcl_ServiceEvent + 0xc5'
+# 21   0x7150b072: 'Tcl_DoOneEvent + 0x162'
+StackWalk failed 0
+# End of Stack Trace
+

@@ -1,0 +1,488 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Nov 11 05:48:06 2025
+# Process ID         : 19692
+# Current directory  : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/synth_1
+# Command line       : vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/synth_1/top.vds
+# Journal file       : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/synth_1\vivado.jou
+# Running On         : Zenbook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 33685 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35833 MB
+# Available Virtual  : 17952 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.srcs/utils_1/imports/synth_1/testbench.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.srcs/utils_1/imports/synth_1/testbench.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7944
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1047.180 ; gain = 469.633
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'PCSrc', assumed default net type 'wire' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:93]
+INFO: [Synth 8-11241] undeclared symbol 'Lui', assumed default net type 'wire' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:94]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'slow_clock_0p5s' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:571]
+INFO: [Synth 8-6155] done synthesizing module 'slow_clock_0p5s' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:571]
+INFO: [Synth 8-6157] synthesizing module 'riscvsingle' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:80]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:135]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:135]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:164]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:182]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:164]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:224]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:308]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:308]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:282]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:282]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:318]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:318]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:262]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:262]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:288]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:288]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:381]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:381]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:334]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:334]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:224]
+INFO: [Synth 8-6155] done synthesizing module 'riscvsingle' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:80]
+INFO: [Synth 8-6157] synthesizing module 'imem_FPGA' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:355]
+INFO: [Synth 8-3876] $readmem data file 'prog.mem' is read successfully [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:362]
+INFO: [Synth 8-6155] done synthesizing module 'imem_FPGA' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:355]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:369]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:369]
+INFO: [Synth 8-6157] synthesizing module 'seven_Seg_Driver' [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:471]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:499]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:520]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:557]
+INFO: [Synth 8-6155] done synthesizing module 'seven_Seg_Driver' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:471]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv:3]
+WARNING: [Synth 8-7129] Port a[31] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[31] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module imem_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[6] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[5] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[4] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[3] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[2] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[1] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[0] in module datapath is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1155.332 ; gain = 577.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1155.332 ; gain = 577.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1155.332 ; gain = 577.785
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1155.332 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1238.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1238.559 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1238.559 ; gain = 661.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1238.559 ; gain = 661.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1238.559 ; gain = 661.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.559 ; gain = 661.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 7     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   26 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   3 Input     32 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               26 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	              32x32  Multipliers := 1     
+	              32x33  Multipliers := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 13    
+	   4 Input   32 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP p_uu, operation Mode is: A*B.
+DSP Report: operator p_uu is absorbed into DSP p_uu.
+DSP Report: operator p_uu is absorbed into DSP p_uu.
+DSP Report: Generating DSP p_uu, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_uu is absorbed into DSP p_uu.
+DSP Report: operator p_uu is absorbed into DSP p_uu.
+DSP Report: Generating DSP p_uu, operation Mode is: A*B.
+DSP Report: operator p_uu is absorbed into DSP p_uu.
+DSP Report: operator p_uu is absorbed into DSP p_uu.
+DSP Report: Generating DSP p_uu, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_uu is absorbed into DSP p_uu.
+DSP Report: operator p_uu is absorbed into DSP p_uu.
+DSP Report: Generating DSP p_ss, operation Mode is: A*B.
+DSP Report: operator p_ss is absorbed into DSP p_ss.
+DSP Report: operator p_ss is absorbed into DSP p_ss.
+DSP Report: Generating DSP p_ss, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_ss is absorbed into DSP p_ss.
+DSP Report: operator p_ss is absorbed into DSP p_ss.
+DSP Report: Generating DSP p_ss, operation Mode is: A*B.
+DSP Report: operator p_ss is absorbed into DSP p_ss.
+DSP Report: operator p_ss is absorbed into DSP p_ss.
+DSP Report: Generating DSP p_ss, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_ss is absorbed into DSP p_ss.
+DSP Report: operator p_ss is absorbed into DSP p_ss.
+DSP Report: Generating DSP p_su, operation Mode is: A*B.
+DSP Report: operator p_su is absorbed into DSP p_su.
+DSP Report: operator p_su is absorbed into DSP p_su.
+DSP Report: Generating DSP p_su, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_su is absorbed into DSP p_su.
+DSP Report: operator p_su is absorbed into DSP p_su.
+DSP Report: Generating DSP p_su, operation Mode is: A*B.
+DSP Report: operator p_su is absorbed into DSP p_su.
+DSP Report: operator p_su is absorbed into DSP p_su.
+DSP Report: Generating DSP p_su, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_su is absorbed into DSP p_su.
+DSP Report: operator p_su is absorbed into DSP p_su.
+WARNING: [Synth 8-3917] design top has port dp driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1294.273 ; gain = 716.727
+---------------------------------------------------------------------------------
+ Sort Area is  p_su_6 : 0 0 : 2701 5479 : Used 1 time 0
+ Sort Area is  p_su_6 : 0 1 : 2778 5479 : Used 1 time 0
+ Sort Area is  p_ss_b : 0 0 : 2701 5354 : Used 1 time 0
+ Sort Area is  p_ss_b : 0 1 : 2653 5354 : Used 1 time 0
+ Sort Area is  p_su_8 : 0 0 : 2634 5177 : Used 1 time 0
+ Sort Area is  p_su_8 : 0 1 : 2543 5177 : Used 1 time 0
+ Sort Area is  p_ss_d : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  p_ss_d : 0 1 : 2485 5119 : Used 1 time 0
+ Sort Area is  p_uu_0 : 0 0 : 2701 5044 : Used 1 time 0
+ Sort Area is  p_uu_0 : 0 1 : 2343 5044 : Used 1 time 0
+ Sort Area is  p_uu_3 : 0 0 : 2339 4365 : Used 1 time 0
+ Sort Area is  p_uu_3 : 0 1 : 2026 4365 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives     | 
++------------+-----------------------+-----------+----------------------+----------------+
+|top         | dmem/RAM_reg          | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|top         | rvsingle/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12    | 
++------------+-----------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1410.930 ; gain = 833.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1436.855 ; gain = 859.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-----------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives     | 
++------------+-----------------------+-----------+----------------------+----------------+
+|top         | dmem/RAM_reg          | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|top         | rvsingle/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12    | 
++------------+-----------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance imem/rd_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance imem/rd_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1547.992 ; gain = 970.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1642.117 ; gain = 1064.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1642.117 ; gain = 1064.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1642.117 ; gain = 1064.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1642.117 ; gain = 1064.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1650.695 ; gain = 1073.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1650.695 ; gain = 1073.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN>>17+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN>>17+A*B | 17     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN>>17+A*B | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN>>17+A*B | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN>>17+A*B | 15     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN>>17+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |  1280|
+|3     |DSP48E1  |    12|
+|4     |LUT1     |   362|
+|5     |LUT2     |   463|
+|6     |LUT3     |  4147|
+|7     |LUT4     |   179|
+|8     |LUT5     |   347|
+|9     |LUT6     |   602|
+|10    |MUXF7    |    51|
+|11    |RAM32M   |    10|
+|12    |RAM32X1D |     4|
+|13    |RAM64X1S |    32|
+|14    |RAMB18E1 |     1|
+|15    |FDCE     |    59|
+|16    |FDPE     |     2|
+|17    |FDRE     |   178|
+|18    |IBUF     |     2|
+|19    |OBUF     |    16|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1650.695 ; gain = 1073.148
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1650.695 ; gain = 989.922
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1650.695 ; gain = 1073.148
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1659.887 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1390 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1663.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: 30ffacf2
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:43 . Memory (MB): peak = 1663.555 ; gain = 1291.426
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1663.555 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 11 05:48:53 2025...

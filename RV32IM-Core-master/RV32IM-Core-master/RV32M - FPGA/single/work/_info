@@ -1,0 +1,513 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/salti/Desktop/Final_Project/RV32M/single
+vadder
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1760274344
+!i10b 1
+!s100 ;N5?d[dF:SaTXJAm;CH9h3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IJXoCjPD;3zjfG]gggD[kW0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single
+Z5 w1760273706
+Z6 8C:\Users\salti\Desktop\Final_Project\RV32M - FPGA\single\riscvsingle.sv
+Z7 FC:\Users\salti\Desktop\Final_Project\RV32M - FPGA\single\riscvsingle.sv
+!i122 14
+L0 261 5
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1760274343.000000
+Z10 !s107 C:\Users\salti\Desktop\Final_Project\RV32M - FPGA\single\riscvsingle.sv|
+Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\salti\Desktop\Final_Project\RV32M - FPGA\single\riscvsingle.sv|
+!i113 1
+Z12 o-work work -sv
+Z13 tCvgOpt 0
+valu
+R0
+R1
+!i10b 1
+!s100 idN3On9<De8S9HSG?I:OA2
+R2
+IORS_iih1Gjcilz`KgXfYA3
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 360 83
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+valudec
+R0
+R1
+!i10b 1
+!s100 =WOzI>]7BQjGciI_Q[i4f0
+R2
+IaD8dVVQ>N^X[CeQfc_dVK0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 143 59
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vcontroller
+R0
+R1
+!i10b 1
+!s100 foOnYmOBL406HG>>P_;Ok1
+R2
+IBJU]X?MhfYb62TWliMQOF2
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 82 31
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vdatapath
+R0
+R1
+!i10b 1
+!s100 gV8kh35H4ZVBXQ[d8>jH21
+R2
+IY<n4P;N>@ml4nfHiS?GGd2
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 203 37
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vdmem
+R0
+R1
+!i10b 1
+!s100 JME^I0c<@jP:]D]54C5Eo1
+R2
+IL`TN6>5@UHKSHQh^SKSNM0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 348 11
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vextend
+R0
+R1
+!i10b 1
+!s100 PRgbMQ<1J@TYD5>R7I]9T0
+R2
+If<PQV:<MTC6Ea_=oz]Rig0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 267 19
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vflopr
+R0
+R1
+!i10b 1
+!s100 0aU;B0YB4aRcKISEehI^h1
+R2
+I0D9[7H0Y>nhzz6a2<Bdi63
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 287 9
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vimem
+R0
+R1
+!i10b 1
+!s100 aWz@MlJ6jM2T8Pd>3e_>50
+R2
+ID[E1fNQ:OQJD]_MkgkbSU0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 323 10
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vimem_FPGA
+R0
+R1
+!i10b 1
+!s100 ]Tde4Q8:2<4KoVSCf]W@60
+R2
+I<GL`9j1J?44[kdlnnkGQG3
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 334 13
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+nimem_@f@p@g@a
+vmaindec
+R0
+R1
+!i10b 1
+!s100 ^Zg?EzaWGKnl6GHYKekE`0
+R2
+IGoO8C@8F:34a4[P>?OlWI2
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 114 28
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vmux2
+R0
+R1
+!i10b 1
+!s100 QHGU>=f;m8]9KahHUJMSo2
+R2
+IZOkUZDFXR:UOK71DGI>Jl3
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 297 7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vmux3
+R0
+R1
+!i10b 1
+!s100 KjONQ3FBj8PiP3a9MAgOk0
+R2
+IK2M3eiVncI?mR?;VEEz`m0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 305 7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vmux4
+R0
+R1
+!i10b 1
+!s100 K4eO61RKXh1>A_]9lX_g:0
+R2
+IO8o9zT@kL1bGR^8Q^ZzI82
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 313 9
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vregfile
+R0
+R1
+!i10b 1
+!s100 IgcXbXcOkzP35LPVhcboD2
+R2
+IdJfl?anKVYS1zYFBHkQl50
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 241 19
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vriscvsingle
+R0
+R1
+!i10b 1
+!s100 SB0iOm5L^0TocgNh[2_[F3
+R2
+InXnN0eai3BFzVG]bH4T_k3
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 59 22
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vseven_Seg_Driver
+R0
+R1
+!i10b 1
+!s100 a;AgACjM9]f14kK>D7fE?0
+R2
+IP1aRX5c<M=I7LCPbgdcIE3
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 450 99
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+nseven_@seg_@driver
+vslow_clock_0p5s
+R0
+R1
+!i10b 1
+!s100 [3hFnPTnDUPBl;WfKO[Om3
+R2
+IlLSBzz;PADo7k]6d`NSci2
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 550 21
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vtestbench
+R0
+R1
+!i10b 1
+!s100 UVNmjFE?:05=:dF]KVM>h0
+R2
+I;=k[jFfbjWIWV3?_W;6G53
+R3
+S1
+R4
+w1760252471
+8C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_TestBench.sv
+FC:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_TestBench.sv
+!i122 15
+L0 1 54
+R8
+r1
+!s85 0
+31
+!s108 1760274344.000000
+!s107 C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_TestBench.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_TestBench.sv|
+!i113 1
+R12
+R13
+vtop
+R0
+R1
+!i10b 1
+!s100 ]lb6h20Q0Z3D8ik<9864]1
+R2
+IZHGJ;Z><STK^;3ZEzPXS_0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 14
+L0 3 55
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13

@@ -1,0 +1,496 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Sep  3 14:12:40 2025
+# Process ID         : 3660
+# Current directory  : C:/Users/salti/Desktop/Final_Project/single/single.runs/synth_1
+# Command line       : vivado.exe -log testbench.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench.tcl
+# Log file           : C:/Users/salti/Desktop/Final_Project/single/single.runs/synth_1/testbench.vds
+# Journal file       : C:/Users/salti/Desktop/Final_Project/single/single.runs/synth_1\vivado.jou
+# Running On         : Zenbook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 33685 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35833 MB
+# Available Virtual  : 22075 MB
+#-----------------------------------------------------------
+source testbench.tcl -notrace
+Command: synth_design -top testbench -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14512
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 848.531 ; gain = 477.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'PCSrc', assumed default net type 'wire' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:158]
+INFO: [Synth 8-6157] synthesizing module 'testbench' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:81]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:132]
+INFO: [Synth 8-6157] synthesizing module 'riscvsingle' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:145]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:168]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:189]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:189]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:218]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:231]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:218]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:168]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:251]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:331]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:331]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:305]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:305]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:341]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:341]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:285]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:285]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:311]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:311]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:390]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:390]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:357]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:357]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:251]
+INFO: [Synth 8-6155] done synthesizing module 'riscvsingle' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:145]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:367]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'riscvtest_sll.txt'; please make sure the file is added to project and has read permission, ignoring [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:373]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:367]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:378]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:378]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:132]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:101]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:110]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:110]
+WARNING: [Synth 8-11581] system task call 'stop' not supported [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:114]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:115]
+WARNING: [Synth 8-11581] system task call 'stop' not supported [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:117]
+INFO: [Synth 8-6155] done synthesizing module 'testbench' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:81]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:370]
+WARNING: [Synth 8-6014] Unused sequential element hash_reg was removed.  [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:125]
+WARNING: [Synth 8-7129] Port a[31] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[31] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[30] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[29] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[28] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[27] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[26] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[25] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[24] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[23] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[22] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[21] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[20] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[19] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[18] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[17] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[16] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[15] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[14] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[13] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[12] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[11] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[10] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[9] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[8] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[7] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[6] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[5] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[4] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[3] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[2] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[1] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[0] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[31] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[7] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[6] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[5] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[4] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[3] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[2] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[6] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[5] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[4] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[3] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[2] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[1] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[0] in module datapath is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 954.727 ; gain = 583.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 954.727 ; gain = 583.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 954.727 ; gain = 583.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 954.727 ; gain = 583.578
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   8 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-4767] Trying to implement RAM 'dut/rvsingle/dp/rf/rf_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: No valid clock found for write to RAM. 
+RAM "dut/rvsingle/dp/rf/rf_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'dut/dmem/RAM_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: No valid clock found for write to RAM. 
+RAM "dut/dmem/RAM_reg" dissolved into registers
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1301.102 ; gain = 929.953
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1301.102 ; gain = 929.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][31]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][30]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][29]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][28]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][27]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][26]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][25]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][24]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][23]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][22]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][21]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][20]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][19]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][18]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][17]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][16]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][15]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][14]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][13]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][12]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][11]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][10]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][9]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][8]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][7]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][6]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][5]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][4]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][3]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][2]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][1]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[0][0]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][31]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][30]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][29]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][28]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][27]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][26]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][25]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][24]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][23]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][22]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][21]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][20]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][19]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][18]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][17]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][16]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][15]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][14]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][13]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][12]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][11]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][10]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][9]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][8]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][7]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][6]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][5]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][4]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][3]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][2]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][1]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[1][0]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][31]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][30]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][29]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][28]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][27]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][26]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][25]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][24]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][23]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][22]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][21]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][20]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][19]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][18]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][17]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][16]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][15]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][14]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][13]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][12]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][11]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][10]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][9]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][8]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][7]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][6]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][5]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][4]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][3]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][2]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][1]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[2][0]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[3][31]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[3][30]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[3][29]) is unused and will be removed from module testbench.
+WARNING: [Synth 8-3332] Sequential element (dut/rvsingle/dp/rf/rf_reg[3][28]) is unused and will be removed from module testbench.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1301.102 ; gain = 929.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dut/Instr_inferred:in0[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1333.984 ; gain = 962.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1333.984 ; gain = 962.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1333.984 ; gain = 962.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1333.984 ; gain = 962.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1333.984 ; gain = 962.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1333.984 ; gain = 962.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    28|
+|2     |LUT1   |    33|
+|3     |LUT2   |    28|
+|4     |LUT3   |     1|
+|5     |LUT4   |     5|
+|6     |LUT5   |    45|
+|7     |LUT6   |   135|
+|8     |FDRE   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+------------+------+
+|      |Instance            |Module      |Cells |
++------+--------------------+------------+------+
+|1     |top                 |            |   307|
+|2     |  dut               |top         |   307|
+|3     |    rvsingle        |riscvsingle |   275|
+|4     |      dp            |datapath    |   275|
+|5     |        alu         |alu         |   154|
+|6     |        pcaddbranch |adder       |    10|
+|7     |        pcreg       |flopr       |   111|
++------+--------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1333.984 ; gain = 962.836
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 3212 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1333.984 ; gain = 962.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1333.984 ; gain = 962.836
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1348.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1457.418 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1f21d11a
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 240 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1457.418 ; gain = 1087.250
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1457.418 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/salti/Desktop/Final_Project/single/single.runs/synth_1/testbench.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file testbench_utilization_synth.rpt -pb testbench_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  3 14:13:12 2025...

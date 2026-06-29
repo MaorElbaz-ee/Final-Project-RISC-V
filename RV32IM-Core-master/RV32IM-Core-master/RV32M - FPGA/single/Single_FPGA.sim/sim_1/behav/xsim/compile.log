@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module riscvsingle
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-311] analyzing module imem_FPGA
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module seven_Seg_Driver
+INFO: [VRFC 10-311] analyzing module slow_clock_0p5s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_TestBench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench

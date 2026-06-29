@@ -1,0 +1,40 @@
+srcscan starts
+=============== Using precompiled files for SV std libs ===========
+INFO: The Verilog library search path for library "std" is now "C:/Xilinx/Vivado/2024.2/data/precomp_hsv/sv/std" (VERI-1509)
+INFO: The Verilog library search path for library "uvm" is now "C:/Xilinx/Vivado/2024.2/data/precomp_hsv/sv/uvm" (VERI-1509)
+INFO: analyzing module top (VERI-9002)
+INFO: analyzing module riscvsingle (VERI-9002)
+C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv(72): INFO: undeclared symbol 'PCSrc', assumed default net type 'wire' (VERI-2561)
+C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv(73): INFO: undeclared symbol 'Lui', assumed default net type 'wire' (VERI-2561)
+INFO: analyzing module controller (VERI-9002)
+INFO: analyzing module maindec (VERI-9002)
+INFO: analyzing module aludec (VERI-9002)
+INFO: analyzing module datapath (VERI-9002)
+INFO: analyzing module regfile (VERI-9002)
+INFO: analyzing module adder (VERI-9002)
+INFO: analyzing module extend (VERI-9002)
+INFO: analyzing module flopr (VERI-9002)
+INFO: analyzing module mux2 (VERI-9002)
+INFO: analyzing module mux3 (VERI-9002)
+INFO: analyzing module mux4 (VERI-9002)
+INFO: analyzing module imem (VERI-9002)
+INFO: analyzing module imem_FPGA (VERI-9002)
+INFO: analyzing module dmem (VERI-9002)
+INFO: analyzing module alu (VERI-9002)
+INFO: analyzing module seven_Seg_Driver (VERI-9002)
+INFO: analyzing module slow_clock_0p5s (VERI-9002)
+Listing tops:
+VeriTop library:xil_defaultlib mod:top
+VeriTop library:xil_defaultlib mod:mux3
+VeriTop library:xil_defaultlib mod:imem
+END of tops
+C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv(3): INFO: compiling module 'top_default' (VERI-1018)
+C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv(305): INFO: compiling module 'mux3_default' (VERI-1018)
+C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/riscvsingle.sv(323): INFO: compiling module 'imem_default' (VERI-1018)
+ModName: flopr(WIDTH=32)
+ModName: mux2(WIDTH=32)
+ModName: mux4(WIDTH=32)
+BaseName flopr has 1 entries
+BaseName mux2 has 1 entries
+BaseName mux4 has 1 entries
+srcscan exits with return value 0

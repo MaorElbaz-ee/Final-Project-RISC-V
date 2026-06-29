@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Sep  3 10:00:00 2025
+# Process ID         : 25616
+# Current directory  : C:/Users/salti/Desktop/Final_Project/single
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent18364 C:\Users\salti\Desktop\Final_Project\single\single.xpr
+# Log file           : C:/Users/salti/Desktop/Final_Project/single/vivado.log
+# Journal file       : C:/Users/salti/Desktop/Final_Project/single\vivado.jou
+# Running On         : Zenbook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 33685 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35833 MB
+# Available Virtual  : 24996 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/salti/Desktop/Final_Project/single/single.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/salti/Desktop/Final_Project/single/single.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Wed Sep  3 14:12:37 2025] Launched synth_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/single/single.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Sep  3 14:13:22 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/single/single.runs/impl_1/runme.log
+synth_design -top testbench -part xc7k70tfbv676-1 -lint 
+Command: synth_design -top testbench -part xc7k70tfbv676-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14168
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1686.234 ; gain = 456.547
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-11241] undeclared symbol 'PCSrc', assumed default net type 'wire' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:158]
+INFO: [Synth 8-6157] synthesizing module 'testbench' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:81]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:132]
+INFO: [Synth 8-6157] synthesizing module 'riscvsingle' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:145]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:168]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:189]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (1#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:189]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:218]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:231]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (2#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:218]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (3#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:168]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:251]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:331]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (4#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:331]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:305]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:305]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:341]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (6#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:341]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:285]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (7#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:285]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:311]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (8#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:311]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:390]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (9#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:390]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:357]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (10#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:357]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (11#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:251]
+INFO: [Synth 8-6155] done synthesizing module 'riscvsingle' (12#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:145]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:367]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'riscvtest_sll.txt'; please make sure the file is added to project and has read permission, ignoring [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:373]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (13#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:367]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:378]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (14#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:378]
+INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:132]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:101]
+WARNING: [Synth 8-11581] system task call 'stop' not supported [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:114]
+WARNING: [Synth 8-11581] system task call 'stop' not supported [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:117]
+WARNING: [Synth 8-6014] Unused sequential element hash_reg was removed.  [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:125]
+INFO: [Synth 8-6155] done synthesizing module 'testbench' (16#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:81]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1789.125 ; gain = 559.438
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Sep  3 14:13:55 2025
+| Host         : Zenbook running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-1  | WARNING  | 1            | 0        |
+| ASSIGN-5  | WARNING  | 2            | 0        |
+| ASSIGN-6  | WARNING  | 1            | 0        |
+| ASSIGN-10 | WARNING  | 3            | 0        |
+| INFER-3   | WARNING  | 3            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-78] [ASSIGN-1]Input operands(of sizes 32 32 4) of add/sub cluster ending with expression '((a + condinvb) + alucontrol[0])' could yield maximum size of 34, but only width of 32 is being used.
+Hierarchy 'alu', File 'C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv', Line 398.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'Instr_orig' are not set. First unset bit index is 0. 
+RTL Name 'Instr_orig', Hierarchy 'testbench', File 'riscvsingle.sv', Line 125.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'PC_orig' are not set. First unset bit index is 0. 
+RTL Name 'PC_orig', Hierarchy 'testbench', File 'riscvsingle.sv', Line 125.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'Jump' was assigned but not read. 
+RTL Name 'Jump', Hierarchy 'riscvsingle', File 'C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv', Line 152.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'Instr' are not read. First unread bit index is 0. 
+RTL Name 'Instr', Hierarchy 'datapath', File 'riscvsingle.sv', Line 259.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'a' are not read. First unread bit index is 0. 
+RTL Name 'a', Hierarchy 'imem', File 'riscvsingle.sv', Line 367.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'a' are not read. First unread bit index is 0. 
+RTL Name 'a', Hierarchy 'dmem', File 'riscvsingle.sv', Line 379.
+WARNING: [Synth 37-98] [INFER-3]Case equality '===' is not synthesizable. Vivado synthesis will convert it to logical equality '=='.
+RTL Name '!==', Hierarchy 'testbench', File 'C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv', Line 115.
+WARNING: [Synth 37-98] [INFER-3]Case equality '===' is not synthesizable. Vivado synthesis will convert it to logical equality '=='.
+RTL Name '===', Hierarchy 'testbench', File 'C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv', Line 110.
+WARNING: [Synth 37-98] [INFER-3]Case equality '===' is not synthesizable. Vivado synthesis will convert it to logical equality '=='.
+RTL Name '===', Hierarchy 'testbench', File 'C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv', Line 110.
+INFO: [Synth 37-85] Total of 10 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1789.789 ; gain = 560.102
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 14 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: testbench
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1869.258 ; gain = 60.414
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'PCSrc', assumed default net type 'wire' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:158]
+INFO: [Synth 8-6157] synthesizing module 'testbench' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:81]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:132]
+INFO: [Synth 8-6157] synthesizing module 'riscvsingle' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:145]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:168]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:189]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:189]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:218]
+INFO: [Synth 8-226] default block is never used [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:231]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:218]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:168]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:251]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:331]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:331]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:305]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:305]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:341]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:341]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:285]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:285]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:311]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:311]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:390]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:390]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:357]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:357]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:251]
+INFO: [Synth 8-6155] done synthesizing module 'riscvsingle' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:145]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:367]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'riscvtest_sll.txt'; please make sure the file is added to project and has read permission, ignoring [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:373]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:367]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:378]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:378]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:132]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:101]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:110]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:110]
+WARNING: [Synth 8-11581] system task call 'stop' not supported [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:114]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:115]
+WARNING: [Synth 8-11581] system task call 'stop' not supported [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:117]
+INFO: [Synth 8-6155] done synthesizing module 'testbench' (0#1) [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:81]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:370]
+WARNING: [Synth 8-6014] Unused sequential element hash_reg was removed.  [C:/Users/salti/Desktop/Final_Project/single/riscvsingle.sv:125]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1976.641 ; gain = 167.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1978.531 ; gain = 169.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1978.531 ; gain = 169.688
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1986.570 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2080.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2310.211 ; gain = 501.367
+38 Infos, 8 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 2310.211 ; gain = 520.422
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k70tfbv676-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2339.785 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2382.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep  6 09:38:03 2025...

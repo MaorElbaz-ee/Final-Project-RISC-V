@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Sep  3 14:12:40 2025
+# Process ID         : 3660
+# Current directory  : C:/Users/salti/Desktop/Final_Project/single/single.runs/synth_1
+# Command line       : vivado.exe -log testbench.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench.tcl
+# Log file           : C:/Users/salti/Desktop/Final_Project/single/single.runs/synth_1/testbench.vds
+# Journal file       : C:/Users/salti/Desktop/Final_Project/single/single.runs/synth_1\vivado.jou
+# Running On         : Zenbook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 33685 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35833 MB
+# Available Virtual  : 22075 MB
+#-----------------------------------------------------------
+source testbench.tcl -notrace

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Oct 15 16:47:26 2025
+# Process ID         : 21104
+# Current directory  : C:/Users/salti/Desktop/Final_Project/RV32M/single
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent29768 C:\Users\salti\Desktop\Final_Project\RV32M\single\single.xpr
+# Log file           : C:/Users/salti/Desktop/Final_Project/RV32M/single/vivado.log
+# Journal file       : C:/Users/salti/Desktop/Final_Project/RV32M/single\vivado.jou
+# Running On         : Zenbook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 33685 MB
+# Swap memory        : 3226 MB
+# Total Virtual      : 36912 MB
+# Available Virtual  : 2122 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/salti/Desktop/Final_Project/RV32M/single/single.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,43 @@
+# Compile of riscvsingle.sv was successful.
+# Compile of Single_TestBench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 06:17:25 on Nov 11,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+# WARNING: No extended dataflow license exists
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/reset
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: salti  Hostname: ZENBOOK  ProcessID: 27612
+#           Attempting to use alternate WLF file "./wlftd25xnz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftd25xnz
+add wave -position end  sim:/testbench/hash
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/Instr
+add wave -position end  sim:/testbench/dut/rvsingle/dp/rf/rf
+run 1000
+# Simulation succeeded
+# hash = f0e5a292
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/single/Single_TestBench.sv(34)
+#    Time: 266 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/single/Single_TestBench.sv line 34
+# End time: 13:40:22 on Nov 12,2025, Elapsed time: 31:22:57
+# Errors: 0, Warnings: 7

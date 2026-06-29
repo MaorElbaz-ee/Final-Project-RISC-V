@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/salti/Desktop/Final_Project/RV32M/single/Single_TestBench.sv,1759506315,systemVerilog,,,,testbench,,uvm,,,,,,
+C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv,1759506599,systemVerilog,,C:/Users/salti/Desktop/Final_Project/RV32M/single/Single_TestBench.sv,,adder;alu;aludec;controller;datapath;dmem;extend;flopr;imem;maindec;mux2;mux3;mux4;regfile;riscvsingle;top,,uvm,,,,,,
+C:/Users/salti/Desktop/Final_Project/RV32M/single/single_check.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,

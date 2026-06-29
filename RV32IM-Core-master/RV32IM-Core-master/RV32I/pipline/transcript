@@ -1,0 +1,1148 @@
+# Compile of riscv_5stagepipline.sv failed with 1 errors.
+# Compile of riscv_5stagepipline.sv was successful.
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:22:24 on Sep 25,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+# ** Warning: (vsim-3008) [CNNODP] - Component name (Instr) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv Line: 46
+# ** Error: (vsim-3043) Unresolved reference to 'Instr' in dut.Instr.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (32) for port 'Funct3D'. The port definition is at: C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(577).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/id_ex File: C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'Funct3E'. The port definition is at: C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(594).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/id_ex File: C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv Line: 247
+# Error loading design
+# End time: 09:22:25 on Sep 25,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 10
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:29:04 on Sep 25,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+# ** Warning: (vsim-3008) [CNNODP] - Component name (Instr) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv Line: 46
+# ** Error: (vsim-3043) Unresolved reference to 'Instr' in dut.Instr.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv Line: 46
+# Error loading design
+# End time: 09:29:04 on Sep 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:30:54 on Sep 25,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+# ** Warning: (vsim-3008) [CNNODP] - Component name (Instr) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv Line: 46
+# ** Error: (vsim-3043) Unresolved reference to 'Instr' in dut.Instr.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv Line: 46
+# Error loading design
+# End time: 09:30:54 on Sep 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:31:54 on Sep 25,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/dut/rvsingle/dp/rf/rf
+run 1000
+quit -sim
+# End time: 09:38:44 on Sep 25,2025, Elapsed time: 0:06:50
+# Errors: 0, Warnings: 2
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:39:41 on Sep 25,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/dut/rvsingle/dp/rf/rf[2]
+add wave -position end  sim:/testbench/dut/rvsingle/dp/rf/rf[1]
+add wave -position end  sim:/testbench/dut/rvsingle/dp/rf/rf[0]
+add wave -position end  sim:/testbench/dut/dmem/RAM[24]
+# Can't move the Now cursor.
+run 100
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+quit -sim
+# End time: 09:46:55 on Sep 25,2025, Elapsed time: 0:07:14
+# Errors: 0, Warnings: 1
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:49:33 on Sep 25,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+# Compile of riscv_5stagepipline.sv was successful.
+quit -sim
+# End time: 09:53:26 on Sep 25,2025, Elapsed time: 0:03:53
+# Errors: 0, Warnings: 3
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:54:51 on Sep 25,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/dut/riscvpipline/PC
+add wave -position end  sim:/testbench/dut/riscvpipline/InstrF
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[14]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[13]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[12]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[11]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[10]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[9]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[8]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[7]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[6]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[5]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[4]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[3]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[2]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[1]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[0]
+run 1000
+quit -sim
+# End time: 10:16:00 on Sep 25,2025, Elapsed time: 0:21:09
+# Errors: 0, Warnings: 2
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 10:16:42 on Sep 25,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+ run 1000
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+add wave -position end  sim:/testbench/WriteData
+add wave -position end  sim:/testbench/DataAdr
+add wave -position end  sim:/testbench/MemWrite
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 2000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/InstrF
+restart -f
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[9]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[8]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[7]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[6]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[5]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[4]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[3]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[2]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[1]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[0]
+restart -f
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+quit -sim
+# End time: 09:09:31 on Sep 26,2025, Elapsed time: 22:52:49
+# Errors: 0, Warnings: 1
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:10:14 on Sep 26,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/WriteData
+add wave -position end  sim:/testbench/DataAdr
+add wave -position end  sim:/testbench/MemWrite
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/InstrF
+# Error opening C:/Users/salti/Desktop/Final_Project/pipline/verilog_src/std/std.sv
+# Path name 'C:/Users/salti/Desktop/Final_Project/pipline/verilog_src/std/std.sv' doesn't exist.
+# Error opening C:/Users/salti/Desktop/Final_Project/pipline/verilog_src/std/std.sv
+# Path name 'C:/Users/salti/Desktop/Final_Project/pipline/verilog_src/std/std.sv' doesn't exist.
+# Error opening C:/Users/salti/Desktop/Final_Project/pipline/verilog_src/std/std.sv
+# Path name 'C:/Users/salti/Desktop/Final_Project/pipline/verilog_src/std/std.sv' doesn't exist.
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[9]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[8]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[7]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[6]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[5]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[4]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[3]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[2]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[1]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[0]
+run 1000
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+quit -sim
+# End time: 09:21:24 on Sep 26,2025, Elapsed time: 0:11:10
+# Errors: 0, Warnings: 1
+# Compile of riscv_5stagepipline.sv was successful.
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:28:21 on Sep 26,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 1000
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/WriteData
+add wave -position end  sim:/testbench/DataAdr
+add wave -position end  sim:/testbench/MemWrite
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/InstrF
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[9]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[8]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[7]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[6]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[5]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[4]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[3]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[2]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[1]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[0]
+run 1000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+# Compile of riscv_5stagepipline.sv was successful.
+quit -sim
+# End time: 09:42:14 on Sep 26,2025, Elapsed time: 0:13:53
+# Errors: 0, Warnings: 2
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:42:32 on Sep 26,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 1000
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 305 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/WriteData
+add wave -position end  sim:/testbench/DataAdr
+add wave -position end  sim:/testbench/MemWrite
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/InstrF
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[9]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[8]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[7]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[6]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[5]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[4]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[3]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[2]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[1]
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf[0]
+rub 1000
+# invalid command name "rub"
+run 1000
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 305 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+# WARNING: No extended dataflow license exists
+# Compile of riscv_5stagepipline.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/we3
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/a1
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/a2
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/a3
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/wd3
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rd1
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rd2
+restart -f
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/alu/a
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/alu/b
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/alu/alucontrol
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/alu/result
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/alu/zero
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/alu/lt
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/alu/ltu
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/alu/condinvb
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/alu/sum
+restart -f
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/RegWriteM
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/RegWriteW
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/ResultSrcE0
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/PCSrcE
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/RdE
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/RdM
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/RdW
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/Rs1D
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/Rs2D
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/Rs1E
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/Rs2E
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/StallF
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/StallD
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/FlushD
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/FlushE
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/ForwardAE
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/ForwardBE
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/hz/lwStall
+restart -f
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/RegWriteD
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/RegWriteW
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/RegWriteE
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/RegWriteM
+restrart -f
+# invalid command name "restrart"
+restart -f
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+add wave -position end  sim:/testbench/dut/riscvpipline/c/funct7b5
+add wave -position end  sim:/testbench/dut/riscvpipline/c/funct3
+add wave -position end  sim:/testbench/dut/riscvpipline/c/op
+add wave -position end  sim:/testbench/dut/riscvpipline/c/MemWriteD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/ALUSrcD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/RegWriteD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/JumpD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/BranchD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/JalrD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/ResultSrcD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/ImmSrcD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/ALUControlD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/ALUOp
+restart -f 
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation failed
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(38)
+#    Time: 595 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 38
+quit -sim
+# End time: 08:04:02 on Sep 27,2025, Elapsed time: 22:21:30
+# Errors: 0, Warnings: 1
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 08:24:13 on Sep 27,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/WriteData
+add wave -position end  sim:/testbench/DataAdr
+add wave -position end  sim:/testbench/MemWrite
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/InstrF
+run 1000
+quit -sim
+# End time: 08:27:09 on Sep 27,2025, Elapsed time: 0:02:56
+# Errors: 0, Warnings: 2
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 08:34:19 on Sep 27,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/dut/clk
+add wave -position end  sim:/testbench/dut/reset
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/InstrF
+run 1000
+quit -sim
+# End time: 08:37:25 on Sep 27,2025, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 2
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 08:38:07 on Sep 27,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/dut/clk
+add wave -position end  sim:/testbench/dut/reset
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/InstrF
+run 1000
+run -over
+quit -sim
+# End time: 09:00:14 on Sep 27,2025, Elapsed time: 0:22:07
+# Errors: 0, Warnings: 2
+# Compile of riscv_5stagepipline.sv failed with 2 errors.
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:05:58 on Sep 27,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/dut/clk
+add wave -position end  sim:/testbench/dut/reset
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/InstrF
+run 1000
+quit -sim
+# End time: 09:07:57 on Sep 27,2025, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 3
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 09:09:50 on Sep 27,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/dut/clk
+add wave -position end  sim:/testbench/dut/reset
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/InstrF
+run 1000
+add wave -position end  sim:/testbench/dut/imem/a
+add wave -position end  sim:/testbench/dut/imem/rd
+add wave -position end  sim:/testbench/dut/imem/RAM
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position end  sim:/testbench/dut/riscvpipline/c/funct7b5
+add wave -position end  sim:/testbench/dut/riscvpipline/c/funct3
+add wave -position end  sim:/testbench/dut/riscvpipline/c/op
+add wave -position end  sim:/testbench/dut/riscvpipline/c/MemWriteD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/ALUSrcD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/RegWriteD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/JumpD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/BranchD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/JalrD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/ResultSrcD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/ImmSrcD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/ALUControlD
+add wave -position end  sim:/testbench/dut/riscvpipline/c/ALUOp
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/JumpE
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/BranchE
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/JalrE
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/TakeE
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/PCSrcE
+restart -f
+run 400
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/PCF
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/PCNextE
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/PCPlus4F
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/PCTargetE
+restart -f
+tun 300
+# invalid command name "tun"
+run 300
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position 26  sim:/testbench/dut/riscvpipline/dp/alu/a
+add wave -position 27  sim:/testbench/dut/riscvpipline/dp/alu/b
+add wave -position 28  sim:/testbench/dut/riscvpipline/dp/alu/alucontrol
+add wave -position 29  sim:/testbench/dut/riscvpipline/dp/alu/result
+add wave -position 30  sim:/testbench/dut/riscvpipline/dp/alu/zero
+add wave -position 31  sim:/testbench/dut/riscvpipline/dp/alu/lt
+add wave -position 32  sim:/testbench/dut/riscvpipline/dp/alu/ltu
+add wave -position 33  sim:/testbench/dut/riscvpipline/dp/alu/condinvb
+add wave -position 34  sim:/testbench/dut/riscvpipline/dp/alu/sum
+restart -f
+run 300
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position 30  sim:/testbench/dut/riscvpipline/dp/rf/rf[9]
+add wave -position 31  sim:/testbench/dut/riscvpipline/dp/rf/rf[8]
+add wave -position 32  sim:/testbench/dut/riscvpipline/dp/rf/rf[7]
+add wave -position 33  sim:/testbench/dut/riscvpipline/dp/rf/rf[6]
+add wave -position 34  sim:/testbench/dut/riscvpipline/dp/rf/rf[5]
+add wave -position 35  sim:/testbench/dut/riscvpipline/dp/rf/rf[4]
+add wave -position 36  sim:/testbench/dut/riscvpipline/dp/rf/rf[3]
+add wave -position 37  sim:/testbench/dut/riscvpipline/dp/rf/rf[2]
+add wave -position 38  sim:/testbench/dut/riscvpipline/dp/rf/rf[1]
+add wave -position 39  sim:/testbench/dut/riscvpipline/dp/rf/rf[0]
+restart -f
+run 200
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/we3
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/a1
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/a2
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/a3
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/wd3
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rd1
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rd2
+restart -f
+run 300
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+quit -sim
+# End time: 10:27:05 on Sep 27,2025, Elapsed time: 1:17:15
+# Errors: 0, Warnings: 1
+# Compile of riscv_5stagepipline.sv failed with 2 errors.
+# Compile of riscv_5stagepipline.sv failed with 2 errors.
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 10:32:34 on Sep 27,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/dut/clk
+add wave -position end  sim:/testbench/dut/reset
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/InstrF
+run 200
+resatart -f
+# invalid command name "resatart"
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 400
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = xxxxxxxx
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(33)
+#    Time: 286 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 33
+add wave -position end  sim:/testbench/dut/dmem/RAM
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf
+restart-f
+# invalid command name "restart-f"
+restart -f
+run 300
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = xxxxxxxx
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(33)
+#    Time: 286 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 33
+add wave -position end  sim:/testbench/WriteData
+add wave -position end  sim:/testbench/DataAdr
+add wave -position end  sim:/testbench/MemWrite
+restart -f
+run 400
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = xxxxxxxx
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv(33)
+#    Time: 286 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/pipline/riscv_5stagepipline.sv line 33
+quit -sim
+# End time: 11:20:57 on Sep 27,2025, Elapsed time: 0:48:23
+# Errors: 0, Warnings: 1
+# Compile of riscv_5stagepipline.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 11:21:19 on Sep 27,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf
+run 1000
+add wave -position end  sim:/testbench/dut/dmem/RAM[24]
+# Compile of riscv_5stagepipline.sv was successful.
+# Compile of riscv_5stagepipline.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of riscv_5stagepipline.sv was successful.
+add wave -position end  sim:/testbench/dut/riscvpipline/PC
+add wave -position end  sim:/testbench/dut/riscvpipline/InstrF
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 14:28:28 on Sep 27,2025, Elapsed time: 3:07:09
+# Errors: 0, Warnings: 2

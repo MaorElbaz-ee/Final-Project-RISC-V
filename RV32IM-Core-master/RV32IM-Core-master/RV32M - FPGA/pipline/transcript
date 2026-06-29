@@ -1,0 +1,632 @@
+# Compile of riscvsingle.sv was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 16:05:51 on Oct 03,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/WriteData
+add wave -position end  sim:/testbench/DataAdr
+add wave -position end  sim:/testbench/MemWrite
+add wave -position end  sim:/testbench/hash
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: salti  Hostname: ZENBOOK  ProcessID: 27612
+#           Attempting to use alternate WLF file "./wlftm3635h".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftm3635h
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/Instr
+run 400
+# Simulation succeeded
+# hash = f0e5a292
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv(35)
+#    Time: 266 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv line 35
+# Compile of riscvsingle.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 500
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = 53b22a54
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv(35)
+#    Time: 266 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv line 35
+# WARNING: No extended dataflow license exists
+add wave -position end  sim:/testbench/dut/rvsingle/dp/rf/rf
+restart -f
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = 53b22a54
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv(35)
+#    Time: 266 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv line 35
+# Compile of riscvsingle.sv was successful.
+restart-f
+# invalid command name "restart-f"
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = 5b07a210
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv(35)
+#    Time: 206 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv line 35
+# Compile of riscvsingle.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 500
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = 53b22a54
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv(35)
+#    Time: 266 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv line 35
+# Compile of riscvsingle.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 500
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = ce3573de
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv(35)
+#    Time: 256 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv line 35
+# Compile of riscvsingle.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 500
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = faa35170
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv(35)
+#    Time: 86 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv line 35
+# Compile of riscvsingle.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 500
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = f0e5a292
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv(35)
+#    Time: 266 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv line 35
+# Compile of riscvsingle.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 500
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = ce3573de
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv(35)
+#    Time: 256 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/single/riscvsingle.sv line 35
+# End time: 18:48:46 on Oct 03,2025, Elapsed time: 2:42:55
+# Errors: 0, Warnings: 1
+ludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = aff9373f
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv(37)
+#    Time: 296 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv line 37
+# Compile of riscv_5stagepipline.sv was successful.
+# Compile of riscv_5stagepipline.sv was successful.
+# Compile of riscv_5stagepipline.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = 53b22a24
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv(55)
+#    Time: 306 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv line 55
+add wave -position end  sim:/testbench/dut/riscvpipline/dp/rf/rf
+restart -f
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = 53b22a24
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv(55)
+#    Time: 306 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv line 55
+# Compile of riscv_5stagepipline.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = 93a2e71f
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv(55)
+#    Time: 296 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv line 55
+# Compile of riscv_5stagepipline.sv was successful.
+# Compile of riscv_5stagepipline.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = 93a2e1fe
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv(55)
+#    Time: 296 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv line 55
+# Compile of riscv_5stagepipline.sv was successful.
+# Compile of riscv_5stagepipline.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = 5b07a210
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv(67)
+#    Time: 296 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv line 67
+restart -f
+# Compile of riscv_5stagepipline.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 500
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = 53b22a54
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv(67)
+#    Time: 306 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv line 67
+# Compile of riscv_5stagepipline.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 500
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = ce3573de
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv(67)
+#    Time: 456 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv line 67
+# Compile of riscv_5stagepipline.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 500
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = faa35170
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv(67)
+#    Time: 126 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv line 67
+# Compile of riscv_5stagepipline.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 500
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = f0e5a292
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv(67)
+#    Time: 306 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv line 67
+# Compile of riscv_5stagepipline.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscv_pipline
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopre
+# Loading work.adder
+# Loading work.if_id_stage_register
+# Loading work.flopref
+# Loading work.regfile
+# Loading work.extend
+# Loading work.id_ex_stage_register
+# Loading work.floprf
+# Loading work.hazard_unit
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.alu
+# Loading work.ex_mem_stage_register
+# Loading work.flopr
+# Loading work.mem_wb_stage_register
+# Loading work.mux4
+# Loading work.imem
+# Loading work.dmem
+run 500
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Simulation succeeded
+# hash = ce3573de
+# ** Note: $stop    : C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv(67)
+#    Time: 456 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/salti/Desktop/Final_Project/RV32M/pipline/riscv_5stagepipline.sv line 67
+# End time: 18:48:41 on Oct 03,2025, Elapsed time: 5:27:57
+# Errors: 0, Warnings: 1

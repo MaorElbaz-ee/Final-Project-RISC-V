@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Nov 11 06:14:00 2025
+# Process ID         : 13444
+# Current directory  : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent13136 C:\Users\salti\Desktop\Final_Project\RV32M - FPGA\single\Single_FPGA.xpr
+# Log file           : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/vivado.log
+# Journal file       : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single\vivado.jou
+# Running On         : Zenbook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 33685 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35833 MB
+# Available Virtual  : 19146 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.xpr}
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_run synth_1 -name synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/single/Single_FPGA.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+current_design rtl_1
+current_design impl_1
+current_design rtl_1
+current_design impl_1

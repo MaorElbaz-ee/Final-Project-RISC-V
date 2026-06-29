@@ -1,0 +1,198 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Oct 15 17:35:26 2025
+# Process ID         : 7636
+# Current directory  : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent29400 C:\Users\salti\Desktop\Final_Project\RV32M - FPGA\7seg\7seg.xpr
+# Log file           : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/vivado.log
+# Journal file       : C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg\vivado.jou
+# Running On         : Zenbook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 33685 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35833 MB
+# Available Virtual  : 14646 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.xpr}
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/top.dcp
+launch_runs synth_1 -jobs 8
+[Wed Oct 15 17:36:23 2025] Launched synth_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Oct 15 17:37:09 2025] Launched synth_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Oct 15 17:37:40 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Oct 15 17:38:29 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-20:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.617 ; gain = 9.762
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292BD6C06A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292BD6C06A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/top.dcp
+launch_runs synth_1 -jobs 8
+[Wed Oct 15 17:41:18 2025] Launched synth_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Oct 15 17:41:51 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Oct 15 17:42:49 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/top.dcp
+launch_runs synth_1 -jobs 8
+[Wed Oct 15 17:44:53 2025] Launched synth_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/top.dcp
+launch_runs synth_1 -jobs 8
+[Wed Oct 15 17:46:13 2025] Launched synth_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Oct 15 17:46:42 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Oct 15 17:47:50 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/top.dcp
+launch_runs synth_1 -jobs 8
+[Wed Oct 15 17:49:15 2025] Launched synth_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Oct 15 17:49:46 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Oct 15 17:50:33 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/top.dcp
+launch_runs synth_1 -jobs 8
+[Wed Oct 15 17:52:06 2025] Launched synth_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Oct 15 17:52:42 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Oct 15 17:53:29 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/top.dcp
+launch_runs synth_1 -jobs 8
+[Wed Oct 15 17:55:02 2025] Launched synth_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Oct 15 17:55:32 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Oct 15 17:56:53 2025] Launched impl_1...
+Run output will be captured here: C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/salti/Desktop/Final_Project/RV32M - FPGA/7seg/7seg.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292BD6C06A
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 15 18:07:43 2025...
