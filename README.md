@@ -24,7 +24,7 @@ RISC-V instructions may provide the following fields:
 
 <ins>**immediate**</ins> - A value contained within the instruction bits themselves. This value may provide an offset for indexing into memory or a value upon which to operate (in place of the register value indexed by rs2).  
 
-![alt text](<RISC-V-CPU-Core-main/Images/RISC-V base instruction formats showing immediate variants.png>)
+![RISC-V base instruction formats](RISC-V-CPU-Core-main/RISC-V-CPU-Core-main/Images/RISC-V%20base%20instruction%20formats%20showing%20immediate%20variants.png)
 
 
 ## RISC-V CPU Block Diagram
@@ -49,8 +49,8 @@ RISC-V instructions may provide the following fields:
 
 <ins>7. DMem</ins> -Our test program executes entirely out of the register file and does not require a data memory (DMem). But no CPU is complete without one. The DMem is written to by store instructions and read from by load instructions.
 
-![alt text](<RISC-V-CPU-Core-main/Images/RISC-V CPU Block Diagram.png>)
+![RISC-V CPU Block Diagram](RISC-V-CPU-Core-main/RISC-V-CPU-Core-main/Images/RISC-V%20CPU%20Block%20Diagram.png)
 
 ## Image of the core
 
-![alt text](<RISC-V-CPU-Core-main/Images/RISCV%20-%20project.png>)
+![RISC-V Core](RISC-V-CPU-Core-main/RISC-V-CPU-Core-main/Images/RISCV%20-%20project.png)
